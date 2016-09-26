@@ -28,7 +28,7 @@ In order to create a new ADBio project using your own data, you need to prepare 
 * Tab-delimited text file: it contains the meta data for each experiment (or each sample)  (See '[example_metadata.tsv](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/example_metadata.tsv)')
 
 ### How to generate RData from my data file.
-You need to install [R](https://cran.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/) first. If you have R, please clone or download this repository in your local computer. Then, please open '[generate_rdata_hc.R](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/generate_rdata_hc.R)' and run it with '[example_metadata.tsv](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/example_metadata.tsv)'. Or please go to [here](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/tutorial_1_generate_rdata.ipynb) and follow the guidelines.
+You need to install [R](https://cran.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/) first. If you have R, please clone or download this repository in your local computer. Then, please open '[generate_rdata_hc.R](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/generate_rdata_hc.R)' and run it with '[example_dataset.csv](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/example_dataset.csv)'. Or please go to [here](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/tutorial_1_generate_rdata.ipynb) and follow the guidelines.
 
 ### How to use a meta data file.
 please go to [here](https://github.com/ActiveDataBio/adbio_tutorial/blob/master/tutorial_2_metadata.ipynb) and refer to the tutorial.
