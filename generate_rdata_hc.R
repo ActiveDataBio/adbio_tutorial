@@ -1,3 +1,6 @@
+# To avoid the error like 'No such file or directory', please set the working directory.
+# setwd('your/repo/path')
+
 #########################################################
 ### A) Reading data and transform it into matrix format
 #########################################################
@@ -9,10 +12,10 @@ rownames(mat_data) <- rnames1                  # assign row names
 #########################################################
 ### B) reading meta data (group information)
 #########################################################
-# metadata <- read.delim("metadata.tsv")
-# rnames2 <- metadata[3:nrow(metadata),1]                            # assign labels in column 1 to "rnames"
-# meta_data <- data.matrix(metadata[3:nrow(metadata),2:ncol(metadata)])  # transform column 2-5 into a matrix
-# rownames(meta_data) <- rnames2                  # assign row names 
+metadata <- read.delim("example_metadata.tsv")
+rnames2 <- metadata[3:nrow(metadata),1]                            # assign labels in column 1 to "rnames"
+meta_data <- data.matrix(metadata[3:nrow(metadata),2:ncol(metadata)])  # transform column 2-5 into a matrix
+rownames(meta_data) <- rnames2                  # assign row names 
 
 # #########################################################
 # ### C) generate cluster info for row
@@ -32,12 +35,12 @@ hc_row <- hclust(d_row)
 # #########################################################
 # ### D) generate cluster info for col
 # #########################################################
-# if ('group' %in% colnames(meta_data)) {
-#   d_col <- dist(meta_data[,'group'])
-# } else {
-  d_col <- dist(t(mat_data))
-  d_col[is.na(d_col)] <- max(d_col, na.rm = TRUE) ## adjust NA to maximum values
-# }
+d_col <- dist(t(mat_data))
+d_col[is.na(d_col)] <- max(d_col, na.rm = TRUE) ## adjust NA to maximum values
+
+## Or you can customize the column clusters with 
+## a 'group' column in the metadata file as follows
+# d_col <- dist(meta_data[,'group'])
 hc_col <- hclust(d_col)
 
 # #########################################################
