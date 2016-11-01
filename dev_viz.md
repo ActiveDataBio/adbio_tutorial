@@ -14,11 +14,11 @@ $.ajax({
 });
 ```
 
-repo is the tokenized repository information located in the address bar,
-name is the file name
+```repo``` is the tokenized repository information located in the address bar,
+```name``` is the file name
 
 
-data will be a string representation of the file contents. If expecting json it will need to be parsed with 
+```data``` will be a string representation of the file contents. If expecting json it will need to be parsed with 
 ```javascript
 var jsonData = JSON.parse(data);
 ```
@@ -50,7 +50,7 @@ File f = repo.createFile(“subPath”,”name”);
 repo.addFile(f.getName(),subPath,CredentialsProvider,message);
 ```
 
-createFile function will create the file locally with the sub path being folders in <path to repository>. Name is the name for the file you want to create. addFile function  adds the file to the repository. It requires a CredentialsProvider from JGit because it will push the file to the git repository.
+```createFile``` function will create the file locally with the sub path being folders in ```<path to repository>```. ```name``` is the name for the file you want to create. ```addFile``` function  adds the file to the repository. It requires a CredentialsProvider from JGit because it will push the file to the git repository.
 
 
 #Creating new Html pages
@@ -77,8 +77,8 @@ $( document ).ready(function() {
   });
 });
 ```
-repo  is the tokenized string in the query string, host is the host located in the query string.
-Server_data is the project information, then creating a new NavHeader with this project will allow you to access the project information from it.
+```repo``` is the tokenized string in the query string, ```host``` is the host located in the query string.
+```server_data``` is the project information, then creating a new NavHeader with this project will allow you to access the project information from it.
 
 ```javascript
 var project = window.navHeader.project;
