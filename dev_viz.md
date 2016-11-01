@@ -83,3 +83,12 @@ $( document ).ready(function() {
 ```javascript
 var project = window.navHeader.project;
 ```
+
+The address bar after moving into a page with a project should have query strings in it. All added links that want to access files from that repository project should include these query strings.
+
+
+```?repo=<token string>&host=<git host e.g. github.com>```
+
+
+
+
