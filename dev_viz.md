@@ -14,11 +14,14 @@ $.ajax({
 });
 ```
 
-repo is the tokenized repository information located in the address bar
+repo is the tokenized repository information located in the address bar,
 name is the file name
 
 
-data will be a string representation of the file contents
+data will be a string representation of the file contents. If expecting json it will need to be parsed with 
+```javascript
+var jsonData = JSON.parse(data);
+```
 
 
 ##From java
