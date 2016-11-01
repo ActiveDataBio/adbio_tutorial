@@ -1,5 +1,5 @@
-#Accessing files from git:
-##From javascript:
+#Accessing files from git using adbio:
+##From javascript using rest call:
 Using jquery 
 
 
