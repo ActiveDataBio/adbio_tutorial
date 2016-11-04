@@ -1,21 +1,21 @@
 #Contributing to Adbio
 
-###Table Of Contents
+####Table Of Contents
 
-###What should I know before I get started
+What should I know before I get started
 * Code of Conduct
 
-###[How Can I Contribute?](#contribute)
+[How Can I Contribute?](#contribute)
 * [Reporting Bugs](#contribute_bug_template)
 * Suggesting Enhancements
 
-###StyleGuides
+StyleGuides
 * Git commit messages
 * JavaScript Styleguide
 
-###Additional Notes
+Additional Notes
 
-###<a name="contribute"></a>How Can I Contribute
+##<a name="contribute"></a>How Can I Contribute?
 ###<a name="contribute_bug_template"></a>Template For Submitting Bug Reports
 ```
 [Short description of problem here]
